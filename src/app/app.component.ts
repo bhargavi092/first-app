@@ -11,7 +11,6 @@ import { HomeComponent } from './home/home.component';
       <section class="content">
         <app-home></app-home>
       </section>
-
       </header>
     </main>`,
   styleUrls: ['./app.component.css'],

@@ -5,6 +5,7 @@
     grid-template-columns: repeat(auto-fill,minmax(400px,400px));
     margin-top: 50px;
     justify-content: space-around;
+    border: 1px solid black;
 }
 
 input[type="text"]{
@@ -30,3 +31,17 @@ button {
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
 }
+@media (min-width: 500px) and (max-width: 768px) {
+    .results {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    input[type="text"] {
+        width: 70%;
+    }   
+  }
+  
+  @media (max-width: 499px) {
+    .results {
+        grid-template-columns: 1fr;
+    }    
+  }
