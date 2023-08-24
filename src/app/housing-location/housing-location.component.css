@@ -25,7 +25,7 @@
     padding: 10px 20px 20px 20px;
 }
 .listing-location::before{
-    /* content: url()/ ""; */
+    content: url("/assets/location-pin.png") / "";
 }
 section.listing a{
     padding-left: 20px;
