@@ -9,8 +9,8 @@ import { HousingLocationComponent } from './housing-location/housing-location.co
 @NgModule({
   declarations: [
     // AppComponent,
-    HomeComponent,
-    HousingLocationComponent,
+    // HomeComponent,
+    // HousingLocationComponent,
   ],
   imports: [
     BrowserModule,

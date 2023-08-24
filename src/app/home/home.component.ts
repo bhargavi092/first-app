@@ -2,9 +2,15 @@ import { Component , inject} from '@angular/core';
 import { HousingLocationComponent } from '../housing-location/housing-location.component';
 import { HousingLocation } from '../housing-location';
 import { HousingService } from '../housing.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
+  standalone: true,
+  imports : [
+    CommonModule,
+    HousingLocationComponent
+  ],
   template:`<section>
     <form>
       <input type="text" placeholder="Filter by City">
