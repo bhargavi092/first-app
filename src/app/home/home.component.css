@@ -1,0 +1,32 @@
+.results{
+    display: grid;
+    column-gap: 14px;
+    row-gap: 14px;
+    grid-template-columns: repeat(auto-fill,minmax(400px,400px));
+    margin-top: 50px;
+    justify-content: space-around;
+}
+
+input[type="text"]{
+    border: 1px solid  rgb(110, 110, 225);
+    padding: 10px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin-right: 4px;
+    display: inline-block;
+    width: 30%;
+}
+button {
+    padding: 10px;
+    border: solid 1px rgb(110, 110, 225);
+    background: rgb(110, 110, 225);
+    color: white;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
