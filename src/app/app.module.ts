@@ -8,7 +8,7 @@ import { HousingLocationComponent } from './housing-location/housing-location.co
 
 @NgModule({
   declarations: [
-    AppComponent,
+    // AppComponent,
     HomeComponent,
     HousingLocationComponent,
   ],
@@ -17,6 +17,6 @@ import { HousingLocationComponent } from './housing-location/housing-location.co
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  // bootstrap: [AppComponent]
 })
 export class AppModule { }
