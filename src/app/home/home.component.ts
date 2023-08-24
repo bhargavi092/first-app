@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component , inject} from '@angular/core';
 import { HousingLocationComponent } from '../housing-location/housing-location.component';
 import { HousingLocation } from '../housing-location';
+import { HousingService } from '../housing.service';
 
 @Component({
   selector: 'app-home',
@@ -31,90 +32,11 @@ export class HomeComponent {
   //   laundry : false,
   // };
 
-  housingLocationList : HousingLocation[] = [
-    {
-      id : 9999,
-        name:"Test Home",
-        city:"Test City",
-        state:"ST",
-        photo: `${this.baseUrl}/home1.jpg` ,
-        availableUnits: 99 ,
-        wifi:true,
-        laundry : false,
-    },
-    {
-      id : 9999,
-        name:"Test Home",
-        city:"Test City",
-        state:"ST",
-        photo: `${this.baseUrl}/home2.jpg` ,
-        availableUnits: 99 ,
-        wifi:true,
-        laundry : false,
-    },{
-      id : 9999,
-        name:"Test Home",
-        city:"Test City",
-        state:"ST",
-        photo: `${this.baseUrl}/home3.jpg` ,
-        availableUnits: 99 ,
-        wifi:true,
-        laundry : false,
-    },{
-      id : 9999,
-        name:"Test Home",
-        city:"Test City",
-        state:"ST",
-        photo: `${this.baseUrl}/home4.jpg` ,
-        availableUnits: 99 ,
-        wifi:true,
-        laundry : false,
-    },{
-      id : 9999,
-        name:"Test Home",
-        city:"Test City",
-        state:"ST",
-        photo: `${this.baseUrl}/home5.jpg` ,
-        availableUnits: 99 ,
-        wifi:true,
-        laundry : false,
-    },{
-      id : 9999,
-        name:"Test Home",
-        city:"Test City",
-        state:"ST",
-        photo: `${this.baseUrl}/home6.jpg` ,
-        availableUnits: 99 ,
-        wifi:true,
-        laundry : false,
-    },{
-      id : 9999,
-        name:"Test Home",
-        city:"Test City",
-        state:"ST",
-        photo: `${this.baseUrl}/home7.jpg` ,
-        availableUnits: 99 ,
-        wifi:true,
-        laundry : false,
-    },{
-      id : 9999,
-        name:"Test Home",
-        city:"Test City",
-        state:"ST",
-        photo: `${this.baseUrl}/home8.jpg` ,
-        availableUnits: 99 ,
-        wifi:true,
-        laundry : false,
-    },{
-      id : 9999,
-        name:"Test Home",
-        city:"Test City",
-        state:"ST",
-        photo: `${this.baseUrl}/home9.webp` ,
-        availableUnits: 99 ,
-        wifi:true,
-        laundry : false,
-    },
-  ]
+  housingLocationList : HousingLocation[] = []       
+  housingService : HousingService = inject(HousingService)
+
+  constructor(){
+    this.housingLocationList = this.housingService.getAllHousingLocations();
+  }
 
 }
