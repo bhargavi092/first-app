@@ -1,5 +1,5 @@
 .listing{
-    background: var(--accent-color);
+    background: rgb(214, 214, 241);
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -8,7 +8,7 @@
     padding-bottom: 30px;
 }
 .listing-heading{
-    color: var(--primary-color);
+    color: rgb(85, 85, 241);
     padding: 10px 20px 0px 10px;
 }
 .listing-photo {
@@ -25,7 +25,12 @@
     padding: 10px 20px 20px 20px;
 }
 .listing-location::before{
-    content: url("/assets/location-pin.png") / "";
+    content: "";
+    background-image: url("/assets/location-pin.jpg");
+    background-size: contain;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
 }
 section.listing a{
     padding-left: 20px;

@@ -17,7 +17,7 @@ import { HousingLocation } from '../housing-location';
 })
 export class HomeComponent {
 
-  readonly baseUrl = 'C:/Users/User/Desktop/first-app/src/assets/images' ;
+  readonly baseUrl = '/assets/images' ;
 
   housingLocation : HousingLocation ={
     id : 9999,
