@@ -7,7 +7,7 @@
   }
   
   .listing-heading {
-    font-size: 48pt;
+    font-size: 40px;
     font-weight: bold;
     margin-bottom: 15px;
   }
@@ -22,13 +22,13 @@
   }
   
   .listing-location {
-    font-size: 24pt;
+    font-size: 24px;
     margin-bottom: 15px;
   }
   
   .listing-features > .section-heading {
-    color: var(--secondary-color);
-    font-size: 24pt;
+    color: rgb(110, 110, 225);
+    font-size: 24px;
     margin-bottom: 15px;
   }
   
@@ -37,7 +37,7 @@
   }
   
   .listing-features li {
-    font-size: 14pt;
+    font-size: 17px;
   }
   
   li {
@@ -46,14 +46,26 @@
   
   .listing-apply .section-heading {
     font-size: 18pt;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
   
   label, input {
     display: block;
   }
+
+  .btn {
+    background-color: rgb(110, 110, 225);
+    padding: 8px 15px;
+    border: 1px solid rgb(110, 110, 225);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+}
   label {
-    color: var(--secondary-color);
+    color: rgb(110, 110, 225);
     font-weight: bold;
     text-transform: uppercase;
     font-size: 12pt;
